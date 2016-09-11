@@ -1,0 +1,6 @@
+<div class="modeChange" ng-controller="modeChangeCtrl">
+	<a ui-sref="index.blockmode" ng-show="!link.isBlockmode">分块模式</a>
+	<a ui-sref="index.tablemode" ng-show="link.isBlockmode">列表模式</a>
+	<div ng-repeat="x in ab">{{x}}</div>
+</div>
+<div ui-view></div>

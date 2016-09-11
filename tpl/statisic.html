@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content ="text/html;charset=utf-8"/>
+	<title>account 2.0 BETA</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<script src="angular.js"></script>
+</head>
+<body ng-app="account">
+
+<div id="onemonth" class="rightBox">
+	<h3>5月<span></span></h3>
+	<p class="today"></p>
+	<p>合计<span class="sumForMonth"></span></p>
+	<p>平均<span class="avgForMonth"></span></p>
+	<p>早餐平均<span class="avgForZC"></span></p>
+	<p>午餐平均<span class="avgForWC"></span></p>
+	<p>晚餐平均<span class="avgForWanC"></span></p>
+	<!-- <p>平均值不包含今日</p> -->
+</div>
+<!-- 只记录出账，不记录消耗的东西的价钱 -->
+<div class="income rightBox">
+	<h3>收入</h3>
+	<p>income-1<span>360</span></p>
+	<p><span></span></p>
+	<p><span></span></p>
+	<p>合计<span class="sumForIncome"></span></p>
+</div>
+<div class="income rightBox" id="BigConsume">
+	<h3>大额花销</h3>
+	<p>合计<span class="sumForIncome"></span></p>
+</div>
+<div ng-controller="everyday">
+	<div class="oneday" ng-repeat="x in dayData">
+		<h3>{{ month + '-' + x.date }}</h3>
+		<p>早餐<span class="asagohan">{{ x.meal[0] }}</span></p>
+		<p>午餐<span class="hilogohan">{{ x.meal[1] }}</span></p>
+		<p>晚餐<span class="bangohan">{{ x.meal[2] }}</span></p>
+		<p ng-repeat="y in x.others">{{ y.name }}<span>{{ y.price }}</span></p>
+		<p>合计<span class="sumForDay"></span></p>
+	</div>
+</div>
+
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<!-- <script type="text/javascript" src="main.js"></script> -->
+<script type="text/javascript" src="everyday.js"></script>
+<script>
+
+</script>
+</body>
+</html>

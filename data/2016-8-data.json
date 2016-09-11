@@ -1,0 +1,32 @@
+{
+	"month": 8,
+	"year": 2016,
+	"dayData": [
+		{
+			"date": 1,
+			"meal": [5.1, 9.5, 8.6],
+			"others": [{
+					"type": 1,
+					"name": "仙贝",
+					"price": 5.6,
+					"number": 3
+				},{
+					"type": 3,
+					"name": "梨",
+					"price": 5.6,
+					"number": 2
+				}
+			]
+		},{
+			"date": 2,
+			"meal": [8.2, 15, 7.5],
+			"others": [{
+					"type": 3,
+					"name": "桃子",
+					"price": 6.5,
+					"number": 3
+				}
+			]
+		}
+	]
+}

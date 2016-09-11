@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content ="text/html;charset=utf-8"/>
+<title>FormPage</title>
+<!-- <link type="text/css" rel="stylesheet" href="style.css"/> -->
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<style type="text/css">
+#blockCity{ position:fixed;font-size:9pt;  background-color:#FFFFCC; padding:5px; border:1px solid #F5C66B;line-height:160%; width:300px;}
+/*#blockCity a
+{
+    color:#000000;
+    font-size:9pt;
+    text-decoration:none;
+}
+#blockCity a:hover
+{
+    font-size:10pt;
+    border-bottom:dashed 1px #000000; 
+}
+#blockCity table
+{
+border:1px dotted #F5C66B;
+}
+#blockCity table td
+{
+   width:40px;
+   text-algin:center;
+}*/
+</style>
+</head>
+<body>
+
+<p onmouseover="selStation('blockCity');" onmouseout="chide();" >sksjsddjd</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p>dswwweee</p>
+<p></p>
+<a href="#" onmouseover="selStation('blockCity');" onmouseout="chide();" >查看我隐藏的DIV</a>
+<div id="blockCity">
+	<a>隐藏的</a>
+</div>
+
+<script type="text/javascript">
+    function selStation(locationid, position){
+        var Obj = document.getElementById("blockCity");
+        document.getElementById("blockCity").innerHTML = "";
+        for (var i=0;i < onecount; i++){
+            if (subcat[i][1] == locationid)
+            {
+                    document.getElementById("blockCity").innerHTML += subcat[i][0]+"<br />";
+                    document.getElementById("blockCity").style.left = position.x + 'px';
+                    document.getElementById("blockCity").style.top = position.y + document.documentElement.scrollTop - 40 + 'px';
+                    document.getElementById("blockCity").style.display = "block";
+            }      
+        }
+        
+    }
+
+    function cshow(){
+        document.getElementById("blockCity").style.display="block";
+    }
+    function chide(){
+        document.getElementById("blockCity").style.display="none";
+    }
+
+    window.onclick = getMousePos;
+    function getMousePos(event) {
+	    var e = event || window.event;
+	    
+	    selStation("blockCity", {'x':e.clientX,'y':e.clientY});
+	    console.log(e.clientX);
+	}
+</script>
+<script type=text/javascript>
+	var onecount;
+	onecount=0;
+	subcat = new Array();
+	subcat[0]=new Array('你要显示的内容','blockCity');
+	onecount=1;
+</script>
+<!-- <script src=""></script> -->
+</body>
+</html>

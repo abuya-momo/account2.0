@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="accountAPP">
+<head>
+	<meta http-equiv="Content-Type" content ="text/html;charset=utf-8"/>
+	<title>account 2.0 BETA</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="css/nev.css"/>
+	<link type="text/css" rel="stylesheet" href="css/typelist.css"/>
+
+	<script type="text/javascript" src="framework/jquery-1.11.3.min.js"></script>
+	<script src="framework/angular.js"></script>
+	<script src="framework/angular-ui-router.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/directives.js"></script>
+	<!-- <script type="text/javascript" src="main.js"></script> -->
+</head>
+<body>
+
+<div id="bg">
+</div>
+
+<div id="main">
+	<div class="nev">
+		<h1>Account 2.0 BETA</h1>
+		<ul class="rightLinklist">
+			<li class="linkLi">
+				<a ui-sref="index.blockmode">统计详情</a>
+			</li>
+			<li class="linkLi">
+				<a ui-sref="typelist">Type列表</a>
+			</li>
+		</ul>
+	</div>
+
+	<div ui-view class="content"></div>
+</div>
+
+
+</body>
+</html>
