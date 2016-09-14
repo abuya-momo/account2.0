@@ -1,144 +1,152 @@
-body{
-	margin: 0;
-	padding-top: 15px;
-	color: #fff;
+body {
+  margin: 0;
+  padding-top: 15px;
+  color: #fff;
+  font-family: 'Microsoft YaHei';
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-.content{
-	position: relative;
-	top: 40px;
-	padding: 10px 0 0 0;
+.content {
+  position: relative;
+  top: 40px;
+  padding: 10px 0 0 0;
 }
 
-#bg{
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../img/bg.png) no-repeat 100% 100%;
-	background-size: 100% 100%;
-	position:fixed;
+#bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png) no-repeat 100% 100%;
+  background-size: 100% 100%;
+  position: fixed;
 }
 
-#main{
-/*	position: fixed;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;*/
-}
-#main:after{
-	display:block;
-    content:'clear';
-    clear:both;
-    line-height:0;
-    visibility:hidden;
+#main {
+  /*	position: fixed;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	overflow: hidden;*/
 }
 
-.panel{
-	border-radius: 6px;
+#main:after {
+  display: block;
+  content: 'clear';
+  clear: both;
+  line-height: 0;
+  visibility: hidden;
 }
 
-.rightBox{
-	float: right;
-	width: 250px;
-	margin: 0px 20px 15px 0px;
-	padding: 10px 12px 10px 12px;
-}
-.rightBox span{
-	float: right;
+.panel {
+  border-radius: 6px;
 }
 
-.income{
-	border: 1px solid #ffffff;
-	background-color: rgba(199, 199, 199, 0.3);
-	color: #fff2df;
+.rightBox {
+  float: right;
+  width: 250px;
+  margin: 0px 20px 15px 0px;
+  padding: 10px 12px 10px 12px;
 }
 
-
-#onemonth{
-	background-color: rgba(199, 199, 199, 0.7);
-	color: #eeeeee;
-}
-#onemonth p span{
-	float: right;
-}
-#onemonth h3{
-	color: #fcfcfc;
-	font-size: 20px;
-	font-weight: bold;
-}
-#onemonth h3 span{
-	color: #edd1d8;
-	font-size: 12px;
-	font-weight: normal;
-}
-.sumForMonth,.avgForMonth{
-	color: #fff2df;
-	font-size: 16px;
-	float: right;
+.rightBox span {
+  float: right;
 }
 
-
-.oneday{
-	width: 250px;
-	margin: 0px 0px 15px 20px;
-	padding: 6px 12px 10px 12px;
-	background-color: rgba(195, 195, 195, 0.5);
-	color: #fcfcfc;
-	overflow: hidden;
-}
-.oneday h3{
-	margin: 14px 0px;
-	color: #efefef;
-	font-size: 26px;
-}
-.oneday span{
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 18px;
-	float: right;
-}
-.itemSelected{
-	background-color: #eaff56;
+.income {
+  border: 1px solid #ffffff;
+  background-color: rgba(199, 199, 199, 0.3);
+  color: #fff2df;
 }
 
-.button{
-	float: right;
-	font-size: 12px;
-	cursor: pointer;
+#onemonth {
+  background-color: rgba(199, 199, 199, 0.7);
+  color: #eeeeee;
+}
+
+#onemonth p span {
+  float: right;
+}
+
+#onemonth h3 {
+  color: #fcfcfc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#onemonth h3 span {
+  color: #edd1d8;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.sumForMonth, .avgForMonth {
+  color: #fff2df;
+  font-size: 16px;
+  float: right;
+}
+
+.oneday {
+  width: 250px;
+  margin: 0px 0px 15px 20px;
+  padding: 6px 12px 10px 12px;
+  background-color: rgba(195, 195, 195, 0.5);
+  color: #fcfcfc;
+  overflow: hidden;
+}
+
+.oneday h3 {
+  margin: 14px 0px;
+  color: #efefef;
+  font-size: 26px;
+}
+
+.oneday span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  float: right;
+}
+
+.itemSelected {
+  background-color: #eaff56;
+}
+
+.button {
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .modeChange {
-	position: fixed;
-	right: 30px;
-	bottom: 15px;
-
-	padding: 15px;
-	border-radius: 6px;
-	background-color: rgba(250, 250, 250, 0.5);
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: rgba(250, 250, 250, 0.5);
 }
 
 .modeChange a {
-	font-weight: 500;
-	color: #2c4f54;
+  font-weight: 500;
+  color: #2c4f54;
 }
 
 .modeChange a:hover {
-	color: #ec6d71;
+  color: #ec6d71;
 }
 
-/*悬浮框(跟随鼠标移动)*/
 .hoverBox {
-	position:fixed;
-	padding:5px;
-	width:300px;
-	line-height:160%;
-	border:1px solid #F5C66B;
-	background-color:#FFFFCC;
-	font-size:9pt;
+  position: fixed;
+  padding: 5px;
+  width: 300px;
+  line-height: 160%;
+  border: 1px solid #F5C66B;
+  background-color: #FFFFCC;
+  font-size: 9pt;
 }
+
+/*# sourceMappingURL=style.css.map */

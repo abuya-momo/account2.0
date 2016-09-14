@@ -1,0 +1,47 @@
+.nev {
+	position: fixed;
+    top: 0px;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+	background-color: #0f2350;
+	z-index: 998;
+}
+
+.nev:after {
+	display:block;
+    content:'clear';
+    clear:both;
+    line-height:0;
+    visibility:hidden;
+}
+
+.nev > h1 {
+	float: left;
+	margin: 0 30px;
+	line-height: 50px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.rightLinklist {
+	float: right;
+	margin: 0 30px 0 0;
+	padding: 0;
+	line-height: 50px;
+}
+
+.linkLi {
+	float: left;
+	margin: 0 10px;
+	list-style: none;
+}
+
+.linkLi > a {
+	color: #f3f3f2;
+	text-decoration: none;
+}
+
+.linkLi > a:hover {
+	color: #aacf53;
+}

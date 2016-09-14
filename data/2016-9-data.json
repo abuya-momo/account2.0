@@ -65,12 +65,32 @@
 			]
 		},{
 			"date": 11,
-			"meal": [5.5, 0, 0],
+			"meal": [5.5, 9, 7],
 			"others": [{
-					"type": null,
-					"name": "",
-					"price": null,
-					"number": null
+					"type": 4,
+					"name": "凉茶",
+					"price": 3.6,
+					"number": 1
+				}
+			]
+		},{
+			"date": 12,
+			"meal": [4.5, 10.2, 5.9],
+			"others": [{
+					"type": 9,
+					"name": "洗澡",
+					"price": 0.6,
+					"number": 1
+				}
+			]
+		},{
+			"date": 13,
+			"meal": [2, 9.1, 6.1],
+			"others": [{
+					"type": 4,
+					"name": "柚子饮料",
+					"price": 3.8,
+					"number": 1
 				}
 			]
 		}

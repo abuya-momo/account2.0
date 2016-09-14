@@ -1,6 +1,32 @@
 .mainBox {
-	width: 800px;
-	margin: 0 auto;
-	border-radius: 6px;
-	background-color: rgba(250, 250, 250, 0.2);
+  width: 800px;
+  margin: 0 auto;
+  padding: 16px 16px 32px 16px;
+  border-radius: 6px;
+  background-color: rgba(250, 250, 250, 0.2);
 }
+.mainBox h2 {
+  margin: 10px 10px 30px 10px;
+}
+
+.typeListTable {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+.typeListTable th, .typeListTable td {
+  border: 1px solid #efefef;
+  margin: 0;
+}
+.typeListTable th {
+  height: 42px;
+  font-size: 18px;
+}
+.typeListTable td {
+  height: 28px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=typelist.css.map */

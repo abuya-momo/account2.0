@@ -1,4 +1,4 @@
-var accountAPP = angular.module('accountAPP', ['ui.router', 'accountCtrl', 'accountDrirective']);
+var accountAPP = angular.module('accountAPP', ['ui.router', 'accountCtrl', 'accountDrirective', 'accountFilters']);
 
 accountAPP.run(function($templateCache) {
 	$templateCache.put('oneday.html', 'tpl/oneday.html');

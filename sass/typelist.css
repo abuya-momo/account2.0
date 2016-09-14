@@ -1,0 +1,6 @@
+.mainBox {
+	width: 800px;
+	margin: 0 auto;
+	border-radius: 6px;
+	background-color: rgba(250, 250, 250, 0.2);
+}

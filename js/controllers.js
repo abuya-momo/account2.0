@@ -19,6 +19,14 @@ app.controller('incomeCtrl', function($scope, $rootScope) {
 	}
 });
 
+app.controller('typelistCtrl', function($scope, $rootScope, $http, $log) {
+	$http.get('data/type.json')
+		 .success(function(response) {
+		 	$scope.listData = response;
+		 	$log.log($scope.listData);
+		});
+});
+
 // app.controller('statisicCtrl', function($scope, $rootScope) {
 // 	$scope.ifShow = false;
 // });

@@ -1,0 +1,12 @@
+{
+  "name": "Ecommunity",
+  "version": "0.1.0",
+  "description": "one SPA for record income and output",
+  "author": "pzh",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "1.0.0",
+    "grunt-contrib-watch": "0.6.1"
+  }
+}

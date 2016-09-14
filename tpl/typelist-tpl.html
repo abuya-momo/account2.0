@@ -1,3 +1,19 @@
-<div class="mainBox">
+<div class="mainBox" ng-controller="typelistCtrl">
 	<h2>Type列表</h2>
+	<table class="typeListTable">
+		<thead>
+			<tr>
+				<th>序号</th>
+				<th>名称</th>
+				<th>范围</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="x in listData">
+				<td>{{ x.index }}</td>
+				<td>{{ x.name }}</td>
+				<td>{{ x.parentType | removeNull }}</td>
+			</tr>
+		</tbody>
+	</table>
 </div>

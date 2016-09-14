@@ -1,42 +1,52 @@
-type:{
-	"0": {
+[
+	{
+		"index": 0,
 		"name": "食品",
 		"parentType": null
 	},
-	"1": {
+	{
+		"index": 1,
 		"name": "零食",
 		"parentType": 0
 	},
-	"2": {
+	{
+		"index": 2,
 		"name": "日用品",
 		"parentType": null
 	},
-	"3": {
+	{
+		"index": 3,
 		"name": "水果",
 		"parentType": 0
 	},
-	"4": {
+	{
+		"index": 4,
 		"name": "饮料",
 		"parentType": 0
 	},
-	"5": {
+	{
+		"index": 5,
 		"name": "学习",
 		"parentType": null
 	},
-	"6": {
+	{
+		"index": 6,
 		"name": "课本",
 		"parentType": 5
 	},
-	"7": {
+	{
+		"index": 7,
 		"name": "阅读",
 		"parentType": 5
 	},
-	"8": {
+	{
+		"index": 8,
 		"name": "生活",
 		"parentType": null
 	},
-	"9": {
+	{
+		"index": 9,
 		"name": "洗澡",
 		"parentType": 8
 	}
-}
+]
