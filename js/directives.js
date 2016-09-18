@@ -32,22 +32,64 @@ var app = angular.module('accountDrirective',[]);
 // 	}
 // });
 
-app.directive('onedayblock', function($templateCache) {
+function calculateOneDayOtherOutput(scope, element, attr) {//计算一天其他支出的总和
+	var sum = 0;
+	if (scope.x.others) {
+		for (var i = 0; i < scope.x.others.length; i++) {
+			sum += scope.x.others[i].price;
+		}
+	}
+	return sum;
+}
+
+
+
+
+
+app.directive('onedayblock', function() {
 	return {
 		restrict: 'EA',
-		templateUrl: 'tpl/oneday.html',
+		templateUrl: 'tpl/onedayblock.html',
 		replace: true,
-		link: function(scope, element, attr) {
+		link: function (scope, element, attr) {//计算一天的总和
 			var sum = 0;
 			for (var i = 0; i < 3; i++) {
 				sum += scope.x.meal[i];
 			}
-			if (scope.x.others) {
-				for (var i = 0; i < scope.x.others.length; i++) {
-					sum += scope.x.others[i].price;
+			sum += calculateOneDayOtherOutput(scope, element, attr);
+			scope.daySum = sum;
+			scope.$parent.monthSum += sum;
+			if(scope.$last == true) {
+				scope.$emit('monthSumEvent', scope.$parent.monthSum);
+			}
+		}
+	}
+});
+
+app.directive('onedaytr', function() {
+	return {
+		restrict: 'EA',
+		templateUrl: 'tpl/onedaytr.html',
+		scope: {
+			monthSum: '=',
+			m: '='
+		},
+		link: function(scope, element, attr) {
+			var otherOutput = 0;
+			if (scope.m.others) {
+				for (var i = 0; i < scope.m.others.length; i++) {
+					otherOutput += scope.m.others[i].price;
 				}
 			}
+			scope.otherOutput = otherOutput;
+			//////////////////////////////////////////////////////////
+			var sum = 0;
+			for (var i = 0; i < 3; i++) {
+				sum += scope.m.meal[i];
+			}
+			sum += otherOutput;
 			scope.daySum = sum;
+			scope.$parent.$parent.monthSum += sum;
 		}
 	}
 });

@@ -91,6 +91,76 @@
 					"name": "柚子饮料",
 					"price": 3.8,
 					"number": 1
+				},{
+					"type": 1,
+					"name": "鳗鱼+牛奶",
+					"price": 4,
+					"number": 1
+				}
+			]
+		},{
+			"date": 14,
+			"meal": [5.5, 6.4, 7.9],
+			"others": [{
+					"type": 9,
+					"name": "洗澡",
+					"price": 3.9,
+					"number": 1
+				},{
+					"type": 4,
+					"name": "维他命水",
+					"price": 3.5,
+					"number": 1
+				},{
+					"type": 3,
+					"name": "无花果",
+					"price": 2.5,
+					"number": 1
+				}
+			]
+		},{
+			"date": 15,
+			"meal": [4.5, 5.5, 35],
+			"others": [{
+					"type": 4,
+					"name": "酸梅汤",
+					"price": 2.5,
+					"number": 1
+				}
+			]
+		},{
+			"date": 16,
+			"meal": [7.5, 6.9, 10.7],
+			"others": [{
+					"type": 4,
+					"name": "牛奶+水",
+					"price": 5,
+					"number": 1
+				}
+			]
+		},{
+			"date": 17,
+			"meal": [5.9, 5.5, 6],
+			"others": [{
+					"type": 4,
+					"name": "水",
+					"price": 2,
+					"number": 1
+				},{
+					"type": 10,
+					"name": "纸",
+					"price": 1,
+					"number": 1
+				}
+			]
+		},{
+			"date": 18,
+			"meal": [4.6, 0, 0],
+			"others": [{
+					"type": null,
+					"name": "",
+					"price": null,
+					"number": null
 				}
 			]
 		}

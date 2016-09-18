@@ -1,8 +1,8 @@
 <div id="onemonth" class="rightBox panel">
 	<h3>{{ month }}月<span></span></h3>
 	<p class="today"></p>
-	<p>合计<span class="sumForMonth"></span></p>
-	<p>平均<span class="avgForMonth"></span></p>
+	<p>合计<span class="sumForMonth">{{ monthSum | number:1 }}元</span></p>
+	<p>平均<span class="avgForMonth">{{ monthSum/dayNum | number:1 }}元</span></p>
 	<p>早餐平均<span class="avgForZC"></span></p>
 	<p>午餐平均<span class="avgForWC"></span></p>
 	<p>晚餐平均<span class="avgForWanC"></span></p>

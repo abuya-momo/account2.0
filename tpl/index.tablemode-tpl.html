@@ -1,6 +1,26 @@
-<div>tableMode!</div>
-<div>tableMode!</div>
-<div>tableMode!</div>
-<div>tableMode!</div>
-<div>tableMode!</div>
-<div>tableMode!</div>
+<div class="mainBox"  ng-controller="everydayCtrl">
+	<h2>{{ month }}月支出表</h2>
+	<table class="typeListTable">
+		<thead>
+			<tr>
+				<th rowspan="2">日期</th>
+				<th colspan="3">三餐</th>
+				<th rowspan="2">其他</th>
+				<th rowspan="2">合计</th>
+			</tr>
+			<tr>
+				<th>早餐</th>
+				<th>午餐</th>
+				<th>晚餐</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="m in dayData" onedaytr month-sum="monthSum" m="m">
+			</tr>
+			<tr>
+				<td colspan="5"></td>
+				<td>{{ monthSum | number:1 }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

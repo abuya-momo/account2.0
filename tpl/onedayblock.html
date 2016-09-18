@@ -6,6 +6,6 @@
 		<p>晚餐<span class="bangohan">{{ x.meal[2] }}</span></p>
 	</div>
 	<p ng-repeat="y in x.others">{{ y.name }}<span>{{ y.price }}</span></p>
-	<p>合计<span class="sumForDay">{{ daySum }}</span></p>
+	<p>合计<span class="sumForDay">{{ daySum | number:1 }}</span></p>
 	<div class="hoverBox" ng-show="hoverBoxShow"></div>
 </div>

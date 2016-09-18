@@ -41,4 +41,12 @@ accountAPP.config(function($stateProvider, $urlRouterProvider) {
 				}
 			}
 		})
+		.state('grid', {
+			url: '/grid',
+			views: {
+				'': {
+					templateUrl: 'tpl/typelist-grid.html'
+				}
+			}
+		})
 });

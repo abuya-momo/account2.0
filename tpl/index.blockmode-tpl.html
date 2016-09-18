@@ -1,8 +1,10 @@
-<div ui-view="statisic"></div>
-<div ui-view="otherItem"></div>
-<!-- 只记录出账，不记录消耗的东西的价钱 -->
-<div ng-controller="everydayCtrl">
-	<div ng-repeat="x in dayData">
-		<onedayblock></onedayblock>
+<div ng-controller="blockmodeCtrl">
+	<div ui-view="statisic"></div>
+	<div ui-view="otherItem"></div>
+	<!-- 只记录出账，不记录消耗的东西的价钱 -->
+	<div ng-controller="everydayCtrl">
+		<div ng-repeat="x in dayData">
+			<onedayblock></onedayblock>
+		</div>
 	</div>
 </div>

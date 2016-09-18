@@ -29,4 +29,16 @@
   font-size: 14px;
 }
 
+.gridBox {
+  color: #333;
+}
+
+.gridCellLink {
+  line-height: 30px;
+}
+
+.gridRow {
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=typelist.css.map */

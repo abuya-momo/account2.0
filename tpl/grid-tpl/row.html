@@ -1,0 +1,10 @@
+<!-- <div class="gridRow">
+	<div style="background-color: pink" ng-repeat="colContainer.renderedColumns track by col.colDef.name" ng-click="grid.appScope.fnOne(row)">
+		<div class="ngVerticalBar" ng-style="{height: rowHeight}" ng-class="{ ngVerticalBarVisible: !$last }"></div>
+		<div class="ui-grid-cell" ui-grid-cell></div>
+	</div>
+</div>
+ -->
+<div ng-click="grid.appScope.fnOne(row)" ng-repeat="col in colContainer.renderedColumns track by col.colDef.name" class="ui-grid-cell gridRow" ui-grid-cell>
+	
+</div>
